@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #be4242;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #b22222;
+    background: -webkit-linear-gradient(to right, hsl(0, 80%, 30%), hsla(0, 40%, 47%, 0.644)), url(/img/Fondopantalla.jpg);
+    background: linear-gradient(to right, hsl(0, 78%, 59%), hsla(0, 53%, 52%, 0.61)), url(/img/Fondopantalla.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    font-size: 16px;
+}
+
+.linknav {
+    text-decoration: none; 
+    color: inherit; 
+    transition: all 0.5s ease; 
+    font-size: 16px; 
+    margin-right: 10px;
+}
+
+.linknav:hover {
+    color: white; 
+    font-size: 20px; 
+}
+
+
+nav > a:hover{
+    text-decoration: none;
+    text-decoration: none; 
+    color: inherit; 
+    transition: all 0.5s ease; 
+    transform: scale(1.2); 
+    font-size: 20px;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+    border-radius: 100px;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos p{
+    margin-left: 20px;
+}
+.contenido-textos{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.contenido-textos h3 span{
+    background: #b22222;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/* Links de las paginas*/
+.Videojoc{
+    text-decoration: none; 
+    color: inherit; 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease; 
+    transform: scale(1); 
+    font-size: 16px;
+}
+.Videojoc:hover{
+    color: #b22222; 
+    transform: scale(1.3);
+}
+.Quisom {
+    text-decoration: none; 
+    color: inherit; 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease; 
+    transform: scale(1.2); 
+    font-size: 16px;
+}
+
+.Quisom:hover {
+    color: #b22222; 
+    transform: scale(1);
+
+
+}
+
+/* Galeria */
+
+
+.videojoc{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(0, 68%, 53%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Organigrama */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.cards .card{
+    background: hwb(0 23% 19%);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 4px black;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.organigrama{
+    width: 90%;
+    box-shadow: 0 10px 20px 4px #b22222;
+    margin-top: 40px;
+    margin-left: 45px;
+    border-radius: 40px;
+}
+
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #c74141;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+}
+
+h1{
+    background-image: linear-gradient(to right, rgba(100, 175, 165, 0.2), #02134e, #6a7ba2, #21645f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /*Color transparent per a que capti el degradat*/
+    background-size: 10%;
+    background-position: 0%;
+    animation: h1animacio 8s infinite alternate-reverse;
+}
+  /*Animacio d'on va fins a on arriba*/
+@keyframes h1animacio {
+    to{
+      background-position: 0%;
+}
+    from{
+      background-position: 100%;
+}
+}
+.Elvideojoc{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.personatge {
+    border-radius: 20%;
+    box-shadow: 10px 10px 50px 0 rgb(0, 0, 0);
+}
+/* Estilos generales */
+.actualitzacions {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.actualitzacions article {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Disposición en columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.actualitzacio {
+    width: 100%; /* Ocupar todo el ancho */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interacción al pasar el ratón */
+.actualitzacio:hover {
+    transform: scale(1.05); /* Escala ligeramente */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    z-index: 1; /* Asegura que se superponga */
+}
+
+/* Estilos de contenido de la tarjeta */
+.actualitzacio h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.actualitzacio p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.actualitzacio ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.actualitzacio li {
+    margin-bottom: 5px;
+}
+
+.actualitzacio img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
